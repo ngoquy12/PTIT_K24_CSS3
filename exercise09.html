@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+
+      .container {
+      }
+
+      .card-container {
+        border: 1px solid gray;
+        width: 500px;
+        padding: 24px;
+      }
+
+      .card-header {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+
+      .status {
+        border: 1px solid gray;
+        width: fit-content;
+        padding: 2px 4px;
+        margin-bottom: 14px;
+      }
+      .card-infomation {
+        margin-bottom: 16px;
+      }
+
+      .info-group {
+      }
+      .icon {
+      }
+      .label {
+      }
+      .value {
+      }
+      .progress-header {
+        position: relative;
+      }
+      .title {
+      }
+      .progress-value-title {
+        position: absolute;
+        right: 0;
+      }
+      .progress-container {
+        width: 100%;
+        height: 10px;
+        background-color: rgb(255 238 202);
+        position: relative;
+        border-radius: 8px;
+      }
+
+      .progress-value {
+        position: absolute;
+        background-color: orange;
+        top: 0;
+        bottom: 0;
+        width: 76%;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-container">
+        <header class="card-header">Water resistant mosqui...</header>
+        <div class="status">Inactive</div>
+        <div class="card-infomation">
+          <div class="info-group">
+            <ion-icon class="icon" name="person-outline"></ion-icon>
+            <span class="label">Client: </span>
+            <span class="value">Nguyễn Văn A</span>
+          </div>
+          <div></div>
+        </div>
+
+        <div class="progress-header">
+          <span class="title">Progress</span>
+          <span class="progress-value-title">76%</span>
+        </div>
+
+        <!-- Thanh progress -->
+        <div class="progress-container">
+          <div class="progress-value"></div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

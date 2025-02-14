@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        border: 1px solid #ccc;
+        width: 600px;
+        margin: 50px;
+        border-radius: 8px;
+      }
+
+      .accordion .accordion-header {
+        padding: 20px;
+        position: relative;
+      }
+
+      .accordion .accordion-header:hover {
+        background-color: rgb(208 226 255);
+        cursor: pointer;
+        transition: all 0.3s linear;
+      }
+
+      .accordion .accordion-header:hover ~ .accordion-content {
+        display: block;
+        transition: all 0.5s linear;
+      }
+
+      .accordion .accordion-header .accordion-heading {
+        display: inline-block;
+      }
+
+      .accordion .accordion-header .icon-down {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+
+      .accordion .accordion-header .icon-down:hover {
+        color: gray;
+      }
+
+      .accordion .accordion-content {
+        padding: 20px;
+        display: none;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="accordion">
+        <div class="accordion-header">
+          <h3 class="accordion-heading">Accordion Item #2</h3>
+          <ion-icon class="icon-down" name="chevron-down-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">
+          <h3 class="accordion-heading">Accordion Item #2</h3>
+          <ion-icon class="icon-down" name="chevron-down-outline"></ion-icon>
+        </div>
+
+        <div class="accordion-content">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+          voluptatum autem praesentium asperiores dolor animi architecto fugit
+          at quam. Vel perspiciatis nisi id odio, magnam maxime eius nesciunt
+          explicabo earum.
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">
+          <h3 class="accordion-heading">Accordion Item #2</h3>
+          <ion-icon class="icon-down" name="chevron-down-outline"></ion-icon>
+        </div>
+
+        <div class="accordion-content">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+          voluptatum autem praesentium asperiores dolor animi architecto fugit
+          at quam. Vel perspiciatis nisi id odio, magnam maxime eius nesciunt
+          explicabo earum.
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        width: 500px;
+        height: 10px;
+        border: 1px solid #dadada;
+        background-color: azure;
+        border-radius: 8px;
+        position: relative;
+      }
+
+      .progress {
+        background-color: gray;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        animation: progress 10s linear infinite;
+        border-radius: 8px;
+      }
+
+      @keyframes progress {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      .overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .menu {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: white;
+        width: 200px;
+        right: 0;
+        /* transform: translateX(200px); */
+        animation: scroll 0.5s linear;
+        padding: 20px;
+      }
+
+      @keyframes scroll {
+        from {
+          transform: translateX(250px);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      .img-container {
+        position: relative;
+      }
+
+      .img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid #dadada;
+        display: inline-block;
+        position: relative;
+      }
+
+      .img-container .img:first-child {
+        left: 0;
+      }
+
+      .img-container .img {
+        left: -30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container">
+      <div class="progress"></div>
+    </div> -->
+
+    <!-- <div class="overlay">
+      <menu class="menu">Menu bar</menu>
+    </div> -->
+
+    <div style="opacity: 0.2">
+      <div>COntent</div>
+    </div>
+
+    <div class="img-container">
+      <div style="background-color: red" class="img img-1"></div>
+      <div style="background-color: green" class="img img-2"></div>
+      <div style="background-color: blue" class="img img-2"></div>
+    </div>
+  </body>
+</html>
